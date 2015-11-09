@@ -1,0 +1,17 @@
+{
+	"category" : "Role4All-Adevs-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"devsComponents",
+		"simulatorName",
+		"componentsTypes",
+		"mainNetwork" ],
+	"name" : "AdevsSimulator",
+	"pools" : [
+		 ],
+	"super" : "AdevsElement",
+	"type" : "normal" }

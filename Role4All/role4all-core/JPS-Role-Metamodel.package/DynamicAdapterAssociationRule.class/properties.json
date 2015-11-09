@@ -1,0 +1,16 @@
+{
+	"category" : "JPS-Role-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"adapter",
+		"player",
+		"role" ],
+	"name" : "DynamicAdapterAssociationRule",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

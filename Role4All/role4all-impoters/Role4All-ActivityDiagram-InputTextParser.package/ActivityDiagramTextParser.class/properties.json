@@ -1,0 +1,29 @@
+{
+	"category" : "Role4All-ActivityDiagram-InputTextParser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"result",
+		"startActivityDefinition",
+		"startActivityDescription",
+		"identifier",
+		"listElement",
+		"actionActivityDefinition",
+		"actionActivityDescription",
+		"forkActivityDescription",
+		"identifierListParser",
+		"forkActivityDefinition",
+		"sendActivityDefinition",
+		"sendActivityDescription",
+		"receiveActivityDescription",
+		"receiveActivityDefinition",
+		"joinActivityDescription",
+		"joinActivityDefinition" ],
+	"name" : "ActivityDiagramTextParser",
+	"pools" : [
+		 ],
+	"super" : "PPCompositeParser",
+	"type" : "normal" }

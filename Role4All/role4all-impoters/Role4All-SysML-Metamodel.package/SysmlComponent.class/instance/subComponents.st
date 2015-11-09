@@ -1,0 +1,4 @@
+accessing
+subComponents
+	
+	^ subComponents

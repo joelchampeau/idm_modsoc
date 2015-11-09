@@ -1,0 +1,3 @@
+role handling
+linkBehavior
+	^'Asynchronous'.

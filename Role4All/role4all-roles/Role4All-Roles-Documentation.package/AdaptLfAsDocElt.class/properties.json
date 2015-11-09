@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-Documentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AdaptLfAsDocElt",
+	"pools" : [
+		 ],
+	"super" : "RoleAdapter",
+	"type" : "normal" }

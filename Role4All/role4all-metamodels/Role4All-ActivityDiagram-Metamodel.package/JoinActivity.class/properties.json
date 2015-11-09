@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-ActivityDiagram-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"numberJoiningActivities" ],
+	"name" : "JoinActivity",
+	"pools" : [
+		 ],
+	"super" : "Activity",
+	"type" : "normal" }

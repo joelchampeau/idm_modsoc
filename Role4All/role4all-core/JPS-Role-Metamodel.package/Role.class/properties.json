@@ -1,0 +1,16 @@
+{
+	"category" : "JPS-Role-Metamodel",
+	"classinstvars" : [
+		"count" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"playRelation",
+		"roleId",
+		"containedRoles" ],
+	"name" : "Role",
+	"pools" : [
+		 ],
+	"super" : "Player",
+	"type" : "normal" }

@@ -1,0 +1,29 @@
+{
+	"category" : "JPS-eFFBD-InputTextParser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"result",
+		"systemDescription",
+		"systemDefinition",
+		"identifier",
+		"branchDescription",
+		"branchDefinition",
+		"listElement",
+		"identifierListParser",
+		"andDefinition",
+		"andDescription",
+		"loopDefinition",
+		"loopDescription",
+		"functionDefinition",
+		"functionDescription",
+		"flowDefinition",
+		"flowDescription" ],
+	"name" : "EffbdTextParser",
+	"pools" : [
+		 ],
+	"super" : "PPCompositeParser",
+	"type" : "normal" }

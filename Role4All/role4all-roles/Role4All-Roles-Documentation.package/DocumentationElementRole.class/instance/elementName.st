@@ -1,0 +1,3 @@
+accessing
+elementName
+	^(playRelation elementName).

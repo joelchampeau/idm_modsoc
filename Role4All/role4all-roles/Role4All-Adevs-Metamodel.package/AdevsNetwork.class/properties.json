@@ -1,0 +1,15 @@
+{
+	"category" : "Role4All-Adevs-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"routes",
+		"components" ],
+	"name" : "AdevsNetwork",
+	"pools" : [
+		 ],
+	"super" : "AdevsDevs",
+	"type" : "normal" }

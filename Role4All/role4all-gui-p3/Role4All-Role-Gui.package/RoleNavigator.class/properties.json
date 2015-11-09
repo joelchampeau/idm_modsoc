@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Role-Gui",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"browser" ],
+	"name" : "RoleNavigator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "JeanPhilippeSchneider 3/18/2015 10:34",
+		"tearDown" : "JeanPhilippeSchneider 12/29/2014 15:26",
+		"testPlays" : "JeanPhilippeSchneider 3/16/2015 09:26",
+		"testPlaysWithIdentifier" : "JeanPhilippeSchneider 3/16/2015 09:29" } }

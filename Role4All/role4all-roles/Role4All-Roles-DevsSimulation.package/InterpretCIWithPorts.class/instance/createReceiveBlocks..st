@@ -1,0 +1,11 @@
+role interpretation
+createReceiveBlocks: obj1
+	|rbCollection comLinks|
+	rbCollection := OrderedCollection new.
+	comLinks := CommunicationLinkRole retrieveInstances select: [ :e | (e target functionName) = (obj1 elementName) ].
+	comLinks do: [ :each |
+		|rb|
+		rb := ReceiveBlock new fromComLink: (each linkTypeName).
+		rbCollection addLast: rb.
+	].
+	^rbCollection .

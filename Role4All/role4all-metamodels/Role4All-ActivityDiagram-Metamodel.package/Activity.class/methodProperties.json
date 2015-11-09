@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"activityName" : "JeanPhilippeSchneider 1/21/2015 14:06",
+		"activityName:" : "JeanPhilippeSchneider 1/21/2015 14:06",
+		"initialize" : "JeanPhilippeSchneider 1/21/2015 14:57",
+		"isActionPerforming" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"isFork" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"isJoin" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"isReceive" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"isSend" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"isStart" : "JeanPhilippeSchneider 1/21/2015 14:28",
+		"next" : "JeanPhilippeSchneider 1/21/2015 14:09",
+		"next:" : "JeanPhilippeSchneider 1/21/2015 14:09",
+		"uniqueIdentifier" : "JeanPhilippeSchneider 1/21/2015 14:57",
+		"uniqueIdentifier:" : "JeanPhilippeSchneider 1/21/2015 14:57" } }

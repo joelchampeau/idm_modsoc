@@ -1,0 +1,18 @@
+{
+	"category" : "JPS-Role-Metamodel",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"players",
+		"contexts",
+		"productionMode",
+		"attachedRoles",
+		"attachedAdapters" ],
+	"name" : "RoleOrganizer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

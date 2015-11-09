@@ -1,0 +1,14 @@
+{
+	"category" : "JPS-Role-Gui",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"browser" ],
+	"name" : "RoleGui",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

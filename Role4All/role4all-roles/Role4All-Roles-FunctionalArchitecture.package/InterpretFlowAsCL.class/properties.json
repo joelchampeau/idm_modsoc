@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-FunctionalArchitecture",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "InterpretFlowAsCL",
+	"pools" : [
+		 ],
+	"super" : "RoleAdapter",
+	"type" : "normal" }

@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createAtomicDevsInstanceFrom:" : "JeanPhilippeSchneider 8/18/2015 09:51",
+		"createSimulationNetworkFrom:" : "JeanPhilippeSchneider 8/19/2015 15:34",
+		"createStateMachineFor:from:" : "JeanPhilippeSchneider 8/20/2015 14:52",
+		"createStatesTransitionsForComputing:" : "JeanPhilippeSchneider 8/20/2015 14:28",
+		"createStatesTransitionsForReception:" : "JeanPhilippeSchneider 8/20/2015 14:45",
+		"createStatesTransitionsForSending:" : "JeanPhilippeSchneider 8/20/2015 16:22",
+		"initialize" : "JeanPhilippeSchneider 8/18/2015 14:25",
+		"visit:" : "JeanPhilippeSchneider 8/19/2015 15:01" } }

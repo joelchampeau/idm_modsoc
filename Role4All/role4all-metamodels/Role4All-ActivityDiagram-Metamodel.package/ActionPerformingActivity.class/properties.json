@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-ActivityDiagram-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"performingDelay" ],
+	"name" : "ActionPerformingActivity",
+	"pools" : [
+		 ],
+	"super" : "Activity",
+	"type" : "normal" }

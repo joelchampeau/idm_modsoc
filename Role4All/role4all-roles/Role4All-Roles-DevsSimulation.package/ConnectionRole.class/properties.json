@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-DevsSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"moduleTypeName" ],
+	"name" : "ConnectionRole",
+	"pools" : [
+		 ],
+	"super" : "Role",
+	"type" : "normal" }

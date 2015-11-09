@@ -1,0 +1,16 @@
+{
+	"category" : "Role4All-Roles-Documentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"owningArtifact",
+		"elementName",
+		"properties" ],
+	"name" : "DocumentationElementRole",
+	"pools" : [
+		 ],
+	"super" : "Role",
+	"type" : "normal" }

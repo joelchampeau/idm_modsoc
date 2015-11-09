@@ -1,0 +1,14 @@
+{
+	"category" : "JPS-Role-Controler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ModelImporter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

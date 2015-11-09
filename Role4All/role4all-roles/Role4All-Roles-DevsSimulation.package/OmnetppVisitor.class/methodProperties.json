@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"visit:" : "JeanPhilippeSchneider 8/12/2015 15:39" },
+	"instance" : {
+		"createAtomicDevsInstanceFrom:" : "JeanPhilippeSchneider 8/12/2015 14:08",
+		"createConnectionFrom:" : "JeanPhilippeSchneider 8/11/2015 16:06",
+		"createGateNamed:ofKind:in:" : "JeanPhilippeSchneider 8/11/2015 15:53",
+		"createSimulationNetworkFrom:" : "JeanPhilippeSchneider 8/12/2015 14:08",
+		"createStateMachineFor:from:" : "JeanPhilippeSchneider 8/18/2015 10:35",
+		"createStatesTransitionsForComputing:" : "JeanPhilippeSchneider 8/18/2015 17:14",
+		"createStatesTransitionsForReception:" : "JeanPhilippeSchneider 8/11/2015 15:13",
+		"createStatesTransitionsForSending:" : "JeanPhilippeSchneider 8/18/2015 15:43",
+		"generateAckMessage" : "JeanPhilippeSchneider 8/11/2015 14:18",
+		"generateDataMessage" : "JeanPhilippeSchneider 8/11/2015 14:20",
+		"generateFinishMessage" : "JeanPhilippeSchneider 8/11/2015 14:21",
+		"generateGetMessage" : "JeanPhilippeSchneider 8/11/2015 14:21",
+		"generateMessages" : "JeanPhilippeSchneider 8/11/2015 14:24",
+		"generatePutMessage" : "JeanPhilippeSchneider 8/11/2015 14:22",
+		"generateWakeUpMessage" : "JeanPhilippeSchneider 8/11/2015 14:22",
+		"initialize" : "JeanPhilippeSchneider 8/11/2015 14:13",
+		"result" : "JeanPhilippeSchneider 8/11/2015 14:14",
+		"result:" : "JeanPhilippeSchneider 8/11/2015 14:14",
+		"visit:" : "JeanPhilippeSchneider 8/12/2015 15:36" } }

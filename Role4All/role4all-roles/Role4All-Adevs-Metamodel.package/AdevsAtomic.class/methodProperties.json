@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addPort:" : "JeanPhilippeSchneider 8/19/2015 15:22",
+		"addState:" : "JeanPhilippeSchneider 8/18/2015 11:43",
+		"addStates:" : "JeanPhilippeSchneider 8/18/2015 11:45",
+		"delta_conf" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"delta_conf:" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"delta_ext" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"delta_ext:" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"delta_int" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"delta_int:" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"initialState" : "JeanPhilippeSchneider 8/19/2015 16:54",
+		"initialState:" : "JeanPhilippeSchneider 8/19/2015 16:54",
+		"initialize" : "JeanPhilippeSchneider 8/19/2015 16:54",
+		"output_func" : "JeanPhilippeSchneider 8/18/2015 14:14",
+		"output_func:" : "JeanPhilippeSchneider 8/18/2015 14:14",
+		"ports" : "JeanPhilippeSchneider 8/19/2015 15:21",
+		"ports:" : "JeanPhilippeSchneider 8/19/2015 15:21",
+		"states" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"states:" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"ta" : "JeanPhilippeSchneider 8/17/2015 17:32",
+		"ta:" : "JeanPhilippeSchneider 8/17/2015 17:32" } }

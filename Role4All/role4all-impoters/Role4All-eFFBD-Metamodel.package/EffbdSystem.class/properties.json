@@ -1,0 +1,15 @@
+{
+	"category" : "Role4All-eFFBD-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"mainBranch",
+		"systemName" ],
+	"name" : "EffbdSystem",
+	"pools" : [
+		 ],
+	"super" : "EffbdElement",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+testing
+isAtomic
+	^false.

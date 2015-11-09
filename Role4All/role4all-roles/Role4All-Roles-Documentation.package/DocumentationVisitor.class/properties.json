@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-Documentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"docInfos" ],
+	"name" : "DocumentationVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

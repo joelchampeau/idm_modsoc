@@ -1,0 +1,15 @@
+{
+	"category" : "Role4All-SysML-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"isBehavioral",
+		"owner" ],
+	"name" : "SysmlPort",
+	"pools" : [
+		 ],
+	"super" : "SysmlNamedElement",
+	"type" : "normal" }

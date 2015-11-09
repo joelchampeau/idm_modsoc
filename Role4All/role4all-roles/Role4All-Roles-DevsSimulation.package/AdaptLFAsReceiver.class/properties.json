@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-DevsSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AdaptLFAsReceiver",
+	"pools" : [
+		 ],
+	"super" : "RoleAdapter",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-eFFBD-InputTextParser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "EffbdImporter",
+	"pools" : [
+		 ],
+	"super" : "ModelImporter",
+	"type" : "normal" }

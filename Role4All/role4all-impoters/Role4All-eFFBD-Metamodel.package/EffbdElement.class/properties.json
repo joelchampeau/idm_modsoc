@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-eFFBD-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"uniqueIdentifier" ],
+	"name" : "EffbdElement",
+	"pools" : [
+		 ],
+	"super" : "Player",
+	"type" : "normal" }

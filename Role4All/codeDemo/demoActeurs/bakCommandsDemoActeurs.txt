@@ -1,0 +1,46 @@
+SysmlComponentInstance plays: LeafFunctionRole underCondition: [ :c | c hasSubComponents not ].
+
+SysmlPortInstance plays: SourceRole underCondition: [ :p | (p portType isBehavioral ) and: [p outLinks isEmpty not]].
+
+SysmlPortInstance plays: TargetRole underCondition: [ :p | (p portType isBehavioral ) and: [p inLinks isEmpty not]].
+
+CommunicationLinkRole containsAll: {'SourceRole'. 'TargetRole'}.
+
+EffbdFunction plays: LeafFunctionRole.
+
+EffbdFlow plays: CommunicationLinkRole.
+
+EffbdFunction plays: SourceRole underCondition: [ :f | f outputFlows isEmpty not ].
+
+EffbdFunction plays: TargetRole underCondition: [ :f | f inputFlows isEmpty not ].
+
+(CommunicationLinkRole retrieveInstanceId: 'CommunicationLinkRole17') containsAll: { 'SourceRole26'. 'TargetRole15' }
+
+(EffbdFunction retrieveInstanceId: '[function.1] ReadEntry1') plays: TargetRole.
+(EffbdFunction retrieveInstanceId: '[function.2] ReadEntry2') plays: TargetRole.
+(EffbdFunction retrieveInstanceId: '[function.3] ReadEntry3') plays: TargetRole.
+
+CommunicationLinkRole containsAll: {'SourceRole'. 'TargetRole'}.
+
+LeafFunctionRole performOnAll: [ :i | i isLeafFunction: true ].
+SourceRole performOnAll: [ :i | i isLeafFunction: false ].
+TargetRole performOnAll: [ :i | i isLeafFunction: false ].
+CommunicationLinkRole performOnAll: [ :i | i isLeafFunction: false ].
+
+CommunicationLinkRole performOnAll: [ :i | i isCommunicationLink: true ].
+SourceRole performOnAll: [ :i | i isCommunicationLink: false ].
+TargetRole performOnAll: [ :i | i isCommunicationLink: false].
+LeafFunctionRole performOnAll: [ :i | i isCommunicationLink: false ].
+
+LeafFunctionRole performOnAll: [ :i | i isLogicalFunctionsGroup: false ].
+SourceRole performOnAll: [ :i | i isLogicalFunctionsGroup: false ].
+TargetRole performOnAll: [ :i | i isLogicalFunctionsGroup: false ].
+CommunicationLinkRole performOnAll: [ :i | i isLogicalFunctionsGroup: false ].
+
+LeafFunctionRole linkedToKind: SysmlComponentInstance  withInterpreter: #InterpretCI.
+LeafFunctionRole linkedToKind: EffbdFunction withInterpreter: #InterpretEffbdFunction.
+SourceRole linkedToKind: SysmlPortInstance withInterpreter: #SourcePort.
+TargetRole linkedToKind: SysmlPortInstance withInterpreter: #TargetPort.
+TargetRole linkedToKind: EffbdFunction withInterpreter: #InterpretFuncAsTarget.
+SourceRole linkedToKind: EffbdFunction withInterpreter: #InterpretFuncAsSource.
+CommunicationLinkRole linkedToKind: EffbdFlow  withInterpreter: #InterpretFlowAsCL. 

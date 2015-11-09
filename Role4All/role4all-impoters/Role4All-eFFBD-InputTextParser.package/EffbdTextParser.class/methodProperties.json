@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"ignoredNames" : "JeanPhilippeSchneider 12/31/2014 13:54" },
+	"instance" : {
+		"andDefinition" : "JeanPhilippeSchneider 1/1/2015 16:47",
+		"andDescription" : "JeanPhilippeSchneider 1/1/2015 16:49",
+		"branchDefinition" : "JeanPhilippeSchneider 12/31/2014 14:30",
+		"branchDescription" : "JeanPhilippeSchneider 12/31/2014 14:30",
+		"flowDefinition" : "JeanPhilippeSchneider 1/2/2015 15:40",
+		"flowDescription" : "JeanPhilippeSchneider 1/5/2015 22:38",
+		"functionDefinition" : "JeanPhilippeSchneider 1/2/2015 15:21",
+		"functionDescription" : "JeanPhilippeSchneider 1/5/2015 22:39",
+		"identifier" : "JeanPhilippeSchneider 1/5/2015 11:22",
+		"identifierListParser" : "JeanPhilippeSchneider 1/5/2015 22:32",
+		"initialize" : "JeanPhilippeSchneider 1/5/2015 13:46",
+		"listElement" : "JeanPhilippeSchneider 12/31/2014 14:27",
+		"loopDefinition" : "JeanPhilippeSchneider 1/1/2015 16:57",
+		"loopDescription" : "JeanPhilippeSchneider 1/1/2015 17:01",
+		"resolveDependencies" : "JeanPhilippeSchneider 12/31/2014 14:51",
+		"start" : "JeanPhilippeSchneider 1/5/2015 13:45",
+		"systemDefinition" : "JeanPhilippeSchneider 1/5/2015 22:42",
+		"systemDescription" : "JeanPhilippeSchneider 12/31/2014 14:21" } }

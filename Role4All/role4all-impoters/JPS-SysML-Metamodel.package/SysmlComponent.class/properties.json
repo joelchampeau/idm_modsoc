@@ -1,0 +1,15 @@
+{
+	"category" : "JPS-SysML-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"ports",
+		"subComponents" ],
+	"name" : "SysmlComponent",
+	"pools" : [
+		 ],
+	"super" : "SysmlNamedElement",
+	"type" : "normal" }

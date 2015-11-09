@@ -1,0 +1,1 @@
+#ifndef __ASYNCHRONOUS_H__#define __ASYNCHRONOUS_H__#include <omnetpp.h>#include "Ack_m.h"#include "Data_m.h"#include "Get_m.h"#include "Put_m.h"#include "MsgKindDefinition.h"using namespace std;class Asynchronous : public cSimpleModule{	protected:		virtual void handleMessage(cMessage *msg);	private:		list<int> queue;		boolean isAConsumerHungry;};#endif

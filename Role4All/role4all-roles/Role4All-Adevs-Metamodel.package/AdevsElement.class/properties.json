@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Adevs-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"elementName" ],
+	"name" : "AdevsElement",
+	"pools" : [
+		 ],
+	"super" : "Player",
+	"type" : "normal" }

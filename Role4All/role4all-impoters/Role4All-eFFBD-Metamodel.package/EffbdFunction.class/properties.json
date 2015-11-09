@@ -1,0 +1,17 @@
+{
+	"category" : "Role4All-eFFBD-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"functionName",
+		"innerBranch",
+		"inputFlows",
+		"outputFlows" ],
+	"name" : "EffbdFunction",
+	"pools" : [
+		 ],
+	"super" : "EffbdElement",
+	"type" : "normal" }

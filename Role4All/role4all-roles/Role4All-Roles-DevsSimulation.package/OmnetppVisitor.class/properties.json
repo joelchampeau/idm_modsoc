@@ -1,0 +1,18 @@
+{
+	"category" : "Role4All-Roles-DevsSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result",
+		"isInitialState",
+		"outputMessage",
+		"previousState",
+		"currentModule" ],
+	"name" : "OmnetppVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

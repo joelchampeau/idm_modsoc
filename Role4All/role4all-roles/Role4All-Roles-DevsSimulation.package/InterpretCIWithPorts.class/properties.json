@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Roles-DevsSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "InterpretCIWithPorts",
+	"pools" : [
+		 ],
+	"super" : "InterpretCI",
+	"type" : "normal" }

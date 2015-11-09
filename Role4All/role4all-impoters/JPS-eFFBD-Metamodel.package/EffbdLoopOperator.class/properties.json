@@ -1,0 +1,14 @@
+{
+	"category" : "JPS-eFFBD-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"effbdLoopedBranch" ],
+	"name" : "EffbdLoopOperator",
+	"pools" : [
+		 ],
+	"super" : "EffbdElement",
+	"type" : "normal" }

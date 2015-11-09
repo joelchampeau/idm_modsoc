@@ -1,0 +1,20 @@
+{
+	"category" : "Role4All-Adevs-CodeGeneration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result",
+		"currentAtomic",
+		"isInitialState",
+		"previousState",
+		"outputMessage",
+		"isComputationState",
+		"initialState" ],
+	"name" : "AdevsVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

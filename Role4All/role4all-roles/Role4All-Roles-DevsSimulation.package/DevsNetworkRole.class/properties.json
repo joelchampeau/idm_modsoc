@@ -1,0 +1,15 @@
+{
+	"category" : "Role4All-Roles-DevsSimulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"submodules",
+		"networkName" ],
+	"name" : "DevsNetworkRole",
+	"pools" : [
+		 ],
+	"super" : "Role",
+	"type" : "normal" }

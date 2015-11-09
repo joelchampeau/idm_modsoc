@@ -1,0 +1,16 @@
+{
+	"category" : "Role4All-Roles-FunctionalArchitecture",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isCommunicationLink",
+		"isLeafFunction",
+		"isLogicalFunctionsGroup" ],
+	"name" : "CommunicationLinkRole",
+	"pools" : [
+		 ],
+	"super" : "Role",
+	"type" : "normal" }

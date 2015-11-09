@@ -1,0 +1,29 @@
+{
+	"category" : "Role4All-SysML-Importer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"result",
+		"identifier",
+		"systemParser",
+		"systemDescParser",
+		"componentDescParser",
+		"componentParser",
+		"listElement",
+		"identifierListParser",
+		"portDescParser",
+		"portParser",
+		"componentInstanceParser",
+		"componentInstanceDescParser",
+		"portInstanceParser",
+		"portInstanceDescParser",
+		"connectorParser",
+		"connectorDescParser" ],
+	"name" : "Text2Sysml",
+	"pools" : [
+		 ],
+	"super" : "PPCompositeParser",
+	"type" : "normal" }
