@@ -1,0 +1,16 @@
+{
+	"category" : "Role4All-Role-Metamodel",
+	"classinstvars" : [
+		"uniqueInstance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"adaptationDefinitions",
+		"allocationRules",
+		"roles" ],
+	"name" : "RoleContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

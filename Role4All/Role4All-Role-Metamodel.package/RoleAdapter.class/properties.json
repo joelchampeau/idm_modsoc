@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Role-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "RoleAdapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
