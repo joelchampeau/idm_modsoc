@@ -1,3 +1,0 @@
-accessing
-owningArtifact
-	^(playRelation owningArtifact).

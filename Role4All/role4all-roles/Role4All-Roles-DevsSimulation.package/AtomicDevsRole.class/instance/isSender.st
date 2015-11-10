@@ -1,3 +1,0 @@
-accessing
-isSender
-	^(playRelation isSender).

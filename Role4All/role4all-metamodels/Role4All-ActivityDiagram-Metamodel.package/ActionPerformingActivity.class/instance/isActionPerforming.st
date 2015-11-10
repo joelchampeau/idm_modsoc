@@ -1,3 +1,0 @@
-testing
-isActionPerforming 
-	^true.

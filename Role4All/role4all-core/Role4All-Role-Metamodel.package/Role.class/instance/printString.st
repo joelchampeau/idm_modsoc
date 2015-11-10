@@ -1,3 +1,0 @@
-printing
-printString
-	^(roleId printString).

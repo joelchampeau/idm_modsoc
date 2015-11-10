@@ -1,3 +1,0 @@
-accessing
-actionGroups
-	^(playRelation actionGroups).

@@ -1,3 +1,0 @@
-accessing
-linkTypeName
-	^(playRelation linkTypeName).

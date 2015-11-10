@@ -1,3 +1,0 @@
-drawing
-organizer
-	^RoleOrganizer default.

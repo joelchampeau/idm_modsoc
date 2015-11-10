@@ -1,1 +1,0 @@
-packages modules;simple Asynchronous {	gates:		output outReader;		input inReader;		input inWriter;		output outWriter;}

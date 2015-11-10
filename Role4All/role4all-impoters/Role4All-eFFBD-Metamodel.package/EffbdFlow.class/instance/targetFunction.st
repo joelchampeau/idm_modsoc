@@ -1,4 +1,0 @@
-accessing
-targetFunction
-	
-	^ targetFunction

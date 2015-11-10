@@ -1,2 +1,0 @@
-*JPS-eFFBD-InputTextParser
-resolveDependencies: aDictionary

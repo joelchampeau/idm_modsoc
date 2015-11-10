@@ -1,3 +1,0 @@
-testing
-isAtomic
-	^false.

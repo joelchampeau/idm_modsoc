@@ -1,4 +1,0 @@
-accessing
-allocationRules
-	
-	^ allocationRules

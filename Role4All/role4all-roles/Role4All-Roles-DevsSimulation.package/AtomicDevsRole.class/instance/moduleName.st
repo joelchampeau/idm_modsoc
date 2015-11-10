@@ -1,3 +1,0 @@
-accessing
-moduleName
-	^(playRelation moduleName).

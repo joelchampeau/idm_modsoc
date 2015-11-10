@@ -1,3 +1,0 @@
-LeafFunctionRole plays: DocumentationElementRole.
-
-DocumentationElementRole linkedToKind: LeafFunctionRole  withInterpreter: #AdaptLfAsDocElt .

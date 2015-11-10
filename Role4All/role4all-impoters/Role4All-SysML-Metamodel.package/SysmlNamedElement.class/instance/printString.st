@@ -1,3 +1,0 @@
-printing
-printString 
-	^(elementName printString).

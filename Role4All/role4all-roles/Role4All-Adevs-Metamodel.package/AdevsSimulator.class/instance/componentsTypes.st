@@ -1,3 +1,0 @@
-accessing
-componentsTypes
-	^ componentsTypes
