@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-SysML-Importer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "SysmlImporter",
+	"pools" : [
+		 ],
+	"super" : "ModelImporter",
+	"type" : "normal" }
