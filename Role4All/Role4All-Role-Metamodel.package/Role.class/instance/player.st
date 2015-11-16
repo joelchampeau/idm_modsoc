@@ -1,4 +1,0 @@
-accessing
-player
-	
-	^ playRelation player.

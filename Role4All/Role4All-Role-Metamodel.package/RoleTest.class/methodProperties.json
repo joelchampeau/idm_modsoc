@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"setUp" : "JeanPhilippeSchneider 3/18/2015 10:34",
-		"tearDown" : "JeanPhilippeSchneider 3/16/2015 10:05",
-		"testAddAttributeToRole" : "JeanPhilippeSchneider 12/2/2014 09:40",
-		"testDetach" : "JeanPhilippeSchneider 3/16/2015 09:57",
-		"testLinkedToKindWithInterpreter" : "JeanPhilippeSchneider 3/16/2015 10:06" } }
