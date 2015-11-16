@@ -1,0 +1,14 @@
+{
+	"category" : "Role4All-Role-Controler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ModelLoader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

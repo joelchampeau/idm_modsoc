@@ -1,0 +1,16 @@
+{
+	"category" : "Role4All-Role-Metamodel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"adapter",
+		"player",
+		"role" ],
+	"name" : "RoleAdapterAssociationRule",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
