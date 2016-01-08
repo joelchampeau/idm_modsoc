@@ -1,22 +1,45 @@
 
-	"NameAndPrise":[
+	"Consumptions":[
 		{
 			"name":"PC",
-			"price":"3000€"
+			"consumption":"500000"
 		},
 		{
 			"name":"FPGA",
-			"price":"42€"
+			"consumption":"2000"
+		},
+		{
+			"name":"I7",
+			"consumption":"176000"
+		},
+		{
+			"name":"ARM",
+			"consumption":"750"
 		}
 	]
 
-	"NameAndIP":[
+
+	"Knowladges":[
 		{
-			"name":"FPGA",
-			"ip":"192.168.1.1"
+			"elementId":"KnowladgeElement1",
+			"elementName":"Hypothetical system"
+		}
+	]
+	"Machineries":[
+		{
+			"elementId":"MachineryElement1",
+			"elementName":"FPGA"
 		},
 		{
-			"name":"PC",
-			"ip":"172.168.1.2"
+			"elementId":"MachineryElement2",
+			"elementName":"ARM or I7"
+		}
+	]
+	"Swaps":[
+		{
+			"elementId":"SwapElement1",
+			"elementName":"SwapM1TOM2",
+			"source":"MachineryElement1",
+			"target":"MachineryElement2"
 		}
 	]
