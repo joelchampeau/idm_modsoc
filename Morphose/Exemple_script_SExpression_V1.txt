@@ -1,0 +1,54 @@
+(system <my_system_test>
+	
+
+	(instance <FPGA_1> <FPGA>)
+	(instance <ARM_1> <Processor>)
+
+	(actor <FPGA_1>
+		(input <FPGA_1_entree>)
+		(output <FPGA_1_sortie>)
+		(behavior
+			(seq <start_FPGA>)
+			(loop <42> 
+				(branch
+					<0.75>
+					(sleep <2>)		
+					<default>
+					(seq <detect>
+						(send <event_detect> <FPGA_1_sortie>)
+						(sleep <2>)
+						(wait <event_Ok> <FPGA_1_entree>)
+					)		
+				)
+			)
+		)
+	)
+
+
+	(actor <ARM_1>
+		(input <ARM_1_entree>)
+		(output <ARM_1_sortie>)
+		(behavior
+			(seq <start_ARM>)
+			(loop <42>
+				(seq <wait_detect>
+					(wait <event_detect> <ARM_1_entree>)
+				)
+				(branch
+					<0.5>
+					(seq <object_ok>
+						(sleep <5>)		
+					)
+					<default>
+					(seq <object_ko>
+						(sleep <3>)		
+					)		
+				)
+				(send <event_Ok> <ARM_1_sortie>)
+			)
+		)
+	)
+
+	(connect <FPGA_1_sortie> <ARM_1_entree>)
+	(connect <ARM_1_sortie> <FPGA_1_entree>)
+)
