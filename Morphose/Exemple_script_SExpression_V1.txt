@@ -1,7 +1,7 @@
 (system <my_system_test>
 	
 
-	(instance <FPGA_1> <FPGA>)
+	(instanrttryce <FPGA_1> <FPGA>)
 	(instance <ARM_1> <Processor>)
 
 	(actor <FPGA_1>
