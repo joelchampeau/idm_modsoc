@@ -1,0 +1,52 @@
+  (event<processed>)
+  (event<detected>)
+  (actor <RaspberryPi>
+    (input <RaspberryPi_input>)
+    (output <RaspberryPi_output>)
+    (behavior
+      (seq <start_RaspberryPi>
+      )
+      (loop <42>
+        (branch
+          <(2/7)>
+          (seq <object_detected>
+            (send <detected> <RaspberryPi_output>)
+            (wait <processed> <RaspberryPi_input>)
+          )
+
+          <(5/7)>
+          (seq <RAS>
+          )
+
+        )
+      )
+    )
+  )
+  (actor <ARM>
+    (input <ARM_input>)
+    (output <ARM_output>)
+    (behavior
+      (seq <start_ARM>
+      )
+      (loop <42>
+        (wait <detected> <ARM_input>)
+        (branch
+          <(1/5)>
+          (seq <blue_object>
+          )
+
+          <(4/5)>
+          (seq <red_object>
+          )
+
+        )
+        (send <processed> <ARM_output>)
+      )
+    )
+  )
+  (system <my_system_test>
+    (instance <RaspberryPi> <nil>)
+    (instance <ARM> <nil>)
+    (connection <RaspberryPi_output> <ARM_input>)
+    (connection <ARM_output> <RaspberryPi_input>)
+  )

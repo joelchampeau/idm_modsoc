@@ -3,6 +3,8 @@
 
 	(instance <FPGA_1> <FPGA>)
 	(instance <ARM_1> <Processor>)
+	(connect <FPGA_1_sortie> <ARM_1_entree>)
+	(connect <ARM_1_sortie> <FPGA_1_entree>)
 
 	(actor <FPGA_1>
 		(input <FPGA_1_entree>)
@@ -23,7 +25,6 @@
 			)
 		)
 	)
-
 
 	(actor <ARM_1>
 		(input <ARM_1_entree>)
@@ -49,6 +50,4 @@
 		)
 	)
 
-	(connect <FPGA_1_sortie> <ARM_1_entree>)
-	(connect <ARM_1_sortie> <FPGA_1_entree>)
 )
