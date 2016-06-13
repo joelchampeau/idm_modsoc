@@ -1,0 +1,74 @@
+  (event<objectDetected>)
+  (actor <CPUMachine>
+    (input <CPUMachinePortIn>)
+    (behavior
+      (seq <initCPUMachine>
+      )
+      (seq <StartCPUMachine>
+      )
+      (loop <19>
+    (seq <initLoop>
+    )
+    (wait <objectDetected> <CPUMachinePortIn>)
+    (branch
+      <(1/5)>
+    (seq <>
+    (seq <aSequence>
+    )
+    )
+
+      <(1/10)>
+    (seq <>
+    (seq <aSequence>
+    )
+    )
+
+      <(7/10)>
+    (seq <>
+    (seq <aSequence>
+    )
+    )
+
+    )
+    (seq <endLoop>
+    )
+      )
+      (seq <endCPUMachine>
+      )
+    )
+  )
+  (actor <PlatformMachine>
+    (output <PlatformMachinePortOut>)
+    (behavior
+      (seq <initPlatformMachine>
+      )
+      (seq <StartPlatformMachine>
+      )
+      (loop <17>
+    (seq <initLoop>
+    )
+    (branch
+      <(1/4)>
+    (seq <>
+    (send <objectDetected> <PlatformMachinePortOut>)
+    )
+
+      <(3/4)>
+    (seq <>
+    (seq <aSequence>
+    )
+    )
+
+    )
+    (seq <endLoop>
+    )
+      )
+      (seq <endPlatformMachine>
+      )
+    )
+  )
+  (system <detectorFSM>
+    (instance <CPUMachine> <nil>)
+    (instance <PlatformMachine> <nil>)
+    (connection <PlatformMachinePortOut> <CPUMachinePortIn>)
+  )
