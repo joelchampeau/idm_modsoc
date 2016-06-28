@@ -1,0 +1,103 @@
+(event<processing>)
+(event<objectDetected>)
+(event<needProcessing>)
+(actor <GPUMachine>
+  (input <GPUMachinePortIn>)
+  (behavior
+    (seq <initGPUMachine>
+    )
+    (seq <StartGPUMachine>
+    )
+    (loop <42>
+      (seq <initLoop>
+      )
+      (wait <processing> <GPUMachinePortIn>)
+      (branch
+        <(1/5)>
+          (seq <>
+            (seq <aSequence>
+            )
+          )
+
+        <(1/10)>
+          (seq <>
+            (seq <aSequence>
+            )
+          )
+
+        <(7/10)>
+          (seq <>
+            (seq <aSequence>
+            )
+          )
+
+      )
+      (seq <endLoop>
+      )
+    )
+    (seq <endGPUMachine>
+    )
+  )
+)
+(actor <CPUMachine>
+  (input <CPUMachinePortIn>)
+  (output <CPUMachinePortOut>)
+  (behavior
+    (seq <initCPUMachine>
+    )
+    (seq <StartCPUMachine>
+    )
+    (loop <42>
+      (seq <initLoop>
+      )
+      (wait <objectDetected> <CPUMachinePortIn>)
+      (send <needProcessing> <CPUMachinePortOut>)
+      (seq <endLoop>
+      )
+    )
+    (seq <endCPUMachine>
+    )
+  )
+)
+(actor <PlatformMachine>
+  (input <PlatformMachinePortIn>)
+  (output <PlatformMachinePortOut2>)
+  (output <PlatformMachinePortOut>)
+  (behavior
+    (seq <initPlatformMachine>
+    )
+    (seq <StartPlatformMachine>
+    )
+    (loop <42>
+      (seq <initLoop>
+      )
+      (branch
+        <(1/4)>
+          (seq <>
+            (send <objectDetected> <PlatformMachinePortOut>)
+          )
+
+        <(3/4)>
+          (seq <>
+            (seq <aSequence>
+            )
+          )
+
+      )
+      (wait <needProcessing> <PlatformMachinePortIn>)
+      (send <processing> <PlatformMachinePortOut2>)
+      (seq <endLoop>
+      )
+    )
+    (seq <endPlatformMachine>
+    )
+  )
+)
+(system <detector2FSM>
+  (instance <GPUMachine> <nil>)
+  (instance <CPUMachine> <nil>)
+  (instance <PlatformMachine> <nil>)
+  (connection <PlatformMachinePortOut> <CPUMachinePortIn>)
+  (connection <CPUMachinePortOut> <PlatformMachinePortIn>)
+  (connection <PlatformMachinePortOut2> <GPUMachinePortIn>)
+)
