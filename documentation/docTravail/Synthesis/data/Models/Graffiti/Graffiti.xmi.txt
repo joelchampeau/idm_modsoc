@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MMM:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MMM="http://fr.ensta-bretagne.morphoseMachine">
+  <actors name="PlatformMachine">
+    <portsIn name="PlatformMachinePortIn"/>
+    <portsOut name="PlatformMachinePortOut"/>
+    <portsOut name="PlatformMachinePortOut2"/>
+    <behavior name="behaviorActor">
+      <initialState name="initPlatformMachine" next="//@actors.0/@behavior/@statements.0"/>
+      <finalState name="endPlatformMachine" last="//@actors.0/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Sequence" name="StartPlatformMachine" next="//@actors.0/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Loop" name="LoopPlatform" last="//@actors.0/@behavior/@statements.0" next="//@actors.0/@behavior/@finalState" nbIteration="42">
+        <sequence name="sequenceLoop">
+          <behavior name="behaviorSequence">
+            <initialState name="initLoop" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.0"/>
+            <finalState name="endLoop" last="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.3"/>
+            <statements xsi:type="MMM:BrancheIn" name="aBrancheIn">
+              <twings name="detected" probability="0.7">
+                <linearStatement xsi:type="MMM:Communication" name="sendDetected" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.1" event="//@events.0" port="//@actors.0/@portsOut.0"/>
+              </twings>
+              <twings name="notDetected" probability="0.3">
+                <linearStatement xsi:type="MMM:Sequence" name="aSequence" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.3"/>
+              </twings>
+            </statements>
+            <statements xsi:type="MMM:Communication" name="waitNeedProcessing" last="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.0/@twings.0/@linearStatement" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.2" event="//@events.1" port="//@actors.0/@portsIn.0" type="WAIT"/>
+            <statements xsi:type="MMM:Communication" name="sendProcessing" last="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.1" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.3" event="//@events.2" port="//@actors.0/@portsOut.1"/>
+            <statements xsi:type="MMM:BrancheOut" name="aBrancheOut" last="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.0/@twings.1/@linearStatement //@actors.0/@behavior/@statements.1/@sequence/@behavior/@statements.2" next="//@actors.0/@behavior/@statements.1/@sequence/@behavior/@finalState"/>
+          </behavior>
+        </sequence>
+      </statements>
+    </behavior>
+  </actors>
+  <actors name="CPUMachine">
+    <portsIn name="CPUMachinePortIn"/>
+    <portsOut name="CPUMachinePortOut"/>
+    <behavior name="behaviorActor">
+      <initialState name="initCPUMachine" next="//@actors.1/@behavior/@statements.0"/>
+      <finalState name="endCPUMachine" last="//@actors.1/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Sequence" name="StartCPUMachine" next="//@actors.1/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Loop" name="LoopCPU" last="//@actors.1/@behavior/@statements.0" next="//@actors.1/@behavior/@finalState" nbIteration="42">
+        <sequence name="sequenceLoop">
+          <behavior name="behaviorSequence">
+            <initialState name="initLoop" next="//@actors.1/@behavior/@statements.1/@sequence/@behavior/@statements.0"/>
+            <finalState name="endLoop" last="//@actors.1/@behavior/@statements.1/@sequence/@behavior/@statements.1"/>
+            <statements xsi:type="MMM:Communication" name="waitDetected" next="//@actors.1/@behavior/@statements.1/@sequence/@behavior/@statements.1" event="//@events.0" port="//@actors.1/@portsIn.0" type="WAIT"/>
+            <statements xsi:type="MMM:Communication" name="sendNeedProcessing" last="//@actors.1/@behavior/@statements.1/@sequence/@behavior/@statements.0" next="//@actors.1/@behavior/@statements.1/@sequence/@behavior/@finalState" event="//@events.1" port="//@actors.1/@portsOut.0"/>
+          </behavior>
+        </sequence>
+      </statements>
+    </behavior>
+  </actors>
+  <actors name="GPUMachine">
+    <portsIn name="GPUMachinePortIn"/>
+    <behavior name="behaviorActor">
+      <initialState name="initGPUMachine" next="//@actors.2/@behavior/@statements.0"/>
+      <finalState name="endGPUMachine" last="//@actors.2/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Sequence" name="StartGPUMachine" next="//@actors.2/@behavior/@statements.1"/>
+      <statements xsi:type="MMM:Loop" name="LoopGPU" last="//@actors.2/@behavior/@statements.0" next="//@actors.2/@behavior/@finalState" nbIteration="42">
+        <sequence name="sequenceLoop">
+          <behavior name="behaviorSequence">
+            <initialState name="initLoop" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.0"/>
+            <finalState name="endLoop" last="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.2"/>
+            <statements xsi:type="MMM:Communication" name="waitProcessing" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.1" event="//@events.2" port="//@actors.2/@portsIn.0" type="WAIT"/>
+            <statements xsi:type="MMM:BrancheIn" name="aBrancheIn" last="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.0">
+              <twings name="isBlue" probability="0.3">
+                <linearStatement xsi:type="MMM:Sequence" name="aSequence" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.2"/>
+              </twings>
+              <twings name="isRed" probability="0.3">
+                <linearStatement xsi:type="MMM:Sequence" name="aSequence" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.2"/>
+              </twings>
+              <twings name="defauld" probability="0.4">
+                <linearStatement xsi:type="MMM:Sequence" name="aSequence" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.2"/>
+              </twings>
+            </statements>
+            <statements xsi:type="MMM:BrancheOut" name="aBrancheOut" last="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.1/@twings.0/@linearStatement //@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.1/@twings.1/@linearStatement //@actors.2/@behavior/@statements.1/@sequence/@behavior/@statements.1/@twings.2/@linearStatement" next="//@actors.2/@behavior/@statements.1/@sequence/@behavior/@finalState"/>
+          </behavior>
+        </sequence>
+      </statements>
+    </behavior>
+  </actors>
+  <events name="objectDetected"/>
+  <events name="needProcessing"/>
+  <events name="processing"/>
+  <connections name="PlatformMachinePortOut_to_CPUMachinePortIn" source="//@actors.0/@portsOut.0" target="//@actors.1/@portsIn.0"/>
+  <connections name="PlatformMachinePortOut2_to_GPUMachinePortIn" source="//@actors.0/@portsOut.1" target="//@actors.2/@portsIn.0"/>
+  <connections name="CPUMachinePortOut_to_PlatformMachinePortIn" source="//@actors.1/@portsOut.0" target="//@actors.0/@portsIn.0"/>
+  <connections name="aPortOut_to_aPortIn"/>
+</MMM:System>

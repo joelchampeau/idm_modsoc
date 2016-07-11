@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="MorphoseMachine_MetaModel" nsURI="http://fr.ensta-bretagne.morphoseMachine"
+    nsPrefix="MMM">
+  <eClassifiers xsi:type="ecore:EClass" name="Name" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="portsIn" upperBound="-1"
+        eType="#//Port" unsettable="true" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="portsOut" upperBound="-1"
+        eType="#//Port" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behavior" eType="#//Behavior"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" lowerBound="1"
+        eType="#//System" eOpposite="#//System/actors"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Behavior" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="initialState" lowerBound="1"
+        eType="#//initialState" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finalState" lowerBound="1"
+        eType="#//finalState" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statements" upperBound="-1"
+        eType="#//Statement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration" eSuperTypes="#//Name"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Connection" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Port"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Port"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" lowerBound="1"
+        eType="#//System" eOpposite="#//System/connections"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="system" lowerBound="1"
+        eType="#//System" eOpposite="#//System/events"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actors" upperBound="-1"
+        eType="#//Actor" containment="true" eOpposite="#//Actor/system"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="events" upperBound="-1"
+        eType="#//Event" containment="true" eOpposite="#//Event/system"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//Connection" containment="true" eOpposite="#//Connection/system"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="initialState" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//LinkedElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LinkedElement" abstract="true" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="last" lowerBound="1" upperBound="-1"
+        eType="#//SimpleStatement" eOpposite="#//SimpleStatement/next"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="finalState" eSuperTypes="#//LinkedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Statement" abstract="true" eSuperTypes="#//LinkedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" eType="#//Configuration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BrancheIn" eSuperTypes="#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="twings" lowerBound="1"
+        upperBound="-1" eType="#//Twing" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleStatement" abstract="true" eSuperTypes="#//Statement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//LinkedElement"
+        eOpposite="#//LinkedElement/last"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BrancheOut" eSuperTypes="#//SimpleStatement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LinearStatement" abstract="true" eSuperTypes="#//SimpleStatement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Communication" eSuperTypes="#//LinearStatement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="event" lowerBound="1" eType="#//Event"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port" lowerBound="1" eType="#//Port"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//CommunicationType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Loop" eSuperTypes="#//LinearStatement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nbIteration" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sequence" lowerBound="1"
+        eType="#//Sequence" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sequence" eSuperTypes="#//LinearStatement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behavior" eType="#//Behavior"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port" eSuperTypes="#//Name"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Twing" eSuperTypes="#//Name">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linearStatement" lowerBound="1"
+        eType="#//LinearStatement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="probability" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CommunicationType">
+    <eLiterals name="SEND" value="1"/>
+    <eLiterals name="WAIT" literal="WAIT"/>
+  </eClassifiers>
+</ecore:EPackage>
